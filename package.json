@@ -1,9 +1,9 @@
 {
-  "name": "alcidion-miya-staffboard",
+  "name": "react-playground",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "http://ac-tfs.alcidion.local:8080/tfs/Product/Miya/_git/Web.StaffBoard"
+    "url": "http://ac-tfs:8080/tfs/Product/Research/_git/CD.ReactPlayground"
   },
   "author": "Alcidion",
   "scripts": {
