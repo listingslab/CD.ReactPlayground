@@ -1,13 +1,14 @@
 # CD.ReactPlayground
 
-## Git Clone Url
-http://ac-tfs:8080/tfs/Product/Research/_git/CD.ReactPlayground
-
 ## Installation
 1. cd to new project directory 
 ```cd <path>/newProjectDirectory```
 2. Clone from Git Repo.
 ```git clone http://ac-tfs:8080/tfs/Product/Research/_git/CD.ReactPlayground```
+3. Install Dependencies
+```npm install```
+4. Start Webpack Server
+```npm start```
 
 ## Code Structure
 
