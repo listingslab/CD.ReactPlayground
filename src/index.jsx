@@ -49,8 +49,6 @@ ReactDOM.render(
     <Provider store={store}>
         <Router history={history}>
             <Route path="/" component={App}>
-                <IndexRedirect to="dashboard" />
-                <Route path="dashboard" component={Dashboard} />
             </Route>
         </Router>
     </Provider>

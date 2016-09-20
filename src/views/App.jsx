@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-//import { Header } from './Header'; <Header />
+import { Header } from '../components/Header';
 
 export class App extends React.Component {
     static propTypes = {
@@ -13,7 +13,7 @@ export class App extends React.Component {
     render() {
         return (
             <div>
-
+                <Header />
                 {this.props.children}
             </div>
         );

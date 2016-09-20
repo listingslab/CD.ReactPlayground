@@ -1,5 +1,5 @@
 /**
- * Created by nicholass on 13/09/2016.
+ * Created by Chris.Dorward on 20/09/2016.
  */
 
 import React from 'react';
@@ -11,7 +11,7 @@ export function Header() {
         <header className="navbar navbar-inverse navbar-static-top">
             <div className="container-fluid">
                 <div className="navbar-header">
-                    <Link className="navbar-brand" to="/">Miya StaffBoard</Link>
+                    <Link className="navbar-brand" to="/">React Playground</Link>
                 </div>
                 <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <p className="navbar-text navbar-right">
