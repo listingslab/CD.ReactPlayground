@@ -5,5 +5,5 @@ http://ac-tfs:8080/tfs/Product/Research/_git/CD.ReactPlayground
 
 ## Install
 
-npm install
-npm start`
+```npm install
+npm start```
