@@ -67,14 +67,13 @@ const webconfig = {
         new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /en-au/),
         new HtmlWebpackPlugin({
             template: 'assets/templates/index.ejs',
-            title: 'Smartforms Playground',
+            title: 'React Playground',
             favicon: 'assets/images/favicon.ico',
             chunksSortMode: 'dependency',
-            version: process.env.GITVERSION_INFORMATIONALVERSION || 'dev',
+            version: require("./package.json").version,
         }),
     ],
     devtool: 'cheap-module-source-map',
 };
 
 module.exports = webconfig;
-

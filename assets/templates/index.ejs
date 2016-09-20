@@ -1,68 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- Miya Referrals Version: <%- htmlWebpackPlugin.options.version %> -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <head>
+        <!-- React Playground Version: <%- htmlWebpackPlugin.options.version %> -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title><%= htmlWebpackPlugin.options.title %></title>
 
-    <script type="text/javascript" id="appBaseUrl">APP_BASE_URL = '<%- htmlWebpackPlugin.options.appBasePath %>';</script>
-    <style>
-        #root > .loading {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-        }
+        <script type="text/javascript" id="appBaseUrl">APP_BASE_URL = '<%- htmlWebpackPlugin.options.appBasePath %>';</script>
 
-        #root > .loading .loading-spinner {
-            width: 40px;
-            height: 40px;
-            background-color: #333;
-            border-radius: 100%;
-            -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-            animation: sk-scaleout 1.0s infinite ease-in-out;
-        }
-
-        #root > .loading .caption {
-            margin-right: 10px;
-            font-size: 24px;
-            font-style: normal;
-        }
-
-        @-webkit-keyframes sk-scaleout {
-            0% {
-                -webkit-transform: scale(0);
-            }
-            100% {
-                -webkit-transform: scale(1);
-                opacity: 0;
-            }
-        }
-
-        @keyframes sk-scaleout {
-            0% {
-                -webkit-transform: scale(0);
-                transform: scale(0);
-            }
-            100% {
-                -webkit-transform: scale(1);
-                transform: scale(1);
-                opacity: 0;
-            }
-        }
-    </style>
-    <title>Miya Referrals</title>
-</head>
-<body>
-<div id="root">
-    <div class="loading">
-        <div class="caption">Loading</div>
-        <div class="loading-spinner"></div>
-    </div>
-</div>
-</body>
+    </head>
+    <body>
+        <div id="root"></div>
+    </body>
+</html>

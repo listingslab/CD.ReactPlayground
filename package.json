@@ -16,7 +16,7 @@
     "typecheck": "flow check"
   },
   "license": "UNLICENCED",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "devDependencies": {
     "autoprefixer": "^6.4.1",
     "babel-cli": "^6.14.0",

@@ -20,19 +20,23 @@ import * as reducers from './reducers/index';
 import rootSaga from './sagas/index';
 
 
-import { App } from './components/App';
+import { App } from './views/App';
 import { Dashboard } from './components/Dashboard';
 
 
 window.myDebug = debug;
 
-const browserHistory = useRouterHistory(createHistory)({ basename: APP_BASE_URL });
+const browserHistory = useRouterHistory(createHistory)({
+    basename: APP_BASE_URL
+});
 
 const sagaMiddleware = createSagaMiddleware();
 
 function myCompose() {
     if (window.devToolsExtension) {
-        return compose(applyMiddleware(sagaMiddleware, routerMiddleware(browserHistory)), window.devToolsExtension());
+        return compose(applyMiddleware(sagaMiddleware,
+            routerMiddleware(browserHistory)),
+            window.devToolsExtension());
     }
     return applyMiddleware(sagaMiddleware, routerMiddleware(browserHistory));
 }
