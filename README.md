@@ -5,13 +5,17 @@ http://ac-tfs:8080/tfs/Product/Research/_git/CD.ReactPlayground
 
 ## Source Code Structure
 
-```assets/
+```
+assets/
         css/
-                screen.scss
-                mobile.scss
-                variables.scss
                 bootstrap.scss
-                fonts.css
+                common.scss
+                mixins.scss
+                mobile.scss        
+                screen.scss
+                utilities.scss
+                variables.scss
+                <font>.css
                 
         fonts/
                 EOT/
@@ -25,5 +29,6 @@ http://ac-tfs:8080/tfs/Product/Research/_git/CD.ReactPlayground
 
         templates/
                 index.ejs
-                ```
+
+```
         
