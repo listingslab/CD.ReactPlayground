@@ -4,11 +4,12 @@
 http://ac-tfs:8080/tfs/Product/Research/_git/CD.ReactPlayground
 
 ## Installation
-1. Clone from Git Repo. cd to new project directory 
-`cd <path>/newProjectDirectory`
-http://ac-tfs:8080/tfs/Product/Research/_git/CD.ReactPlayground
+1. cd to new project directory 
+```cd <path>/newProjectDirectory```
+2. Clone from Git Repo.
+```git clone http://ac-tfs:8080/tfs/Product/Research/_git/CD.ReactPlayground```
 
-## Source Code Structure
+## Code Structure
 
 ```
 assets/
