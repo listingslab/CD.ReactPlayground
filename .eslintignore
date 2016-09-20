@@ -1,0 +1,6 @@
+node_modules/
+coverage/
+reports/
+public/
+**/fixtures/*
+flow_typed/

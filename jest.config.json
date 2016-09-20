@@ -1,0 +1,3 @@
+{
+  "setupTestFrameworkScriptFile": "<rootDir>/scripts/setup-jasmine-env.js"
+}

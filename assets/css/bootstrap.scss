@@ -1,0 +1,66 @@
+// Core variables and mixins
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+
+// Reset and dependencies
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/print";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+
+// Core CSS
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/tables";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+
+// Components
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/navs";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/alerts";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/panels";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/list-group";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/modals";
+
+
+// Bootstrap Overrides / Sanity Adds
+
+.navbar {
+  margin-bottom: 0;
+  font-size: 14px;
+
+  .navbar-right:last-child {
+    margin-right: 0;
+  }
+}
+
+.modal-dialog {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-backdrop {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.nav-pills {
+  li > a {
+    &.active {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-active-link-hover-color;
+        background-color: $nav-pills-active-link-hover-bg;
+      }
+    }
+  }
+}

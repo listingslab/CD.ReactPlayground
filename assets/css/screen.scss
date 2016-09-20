@@ -1,0 +1,33 @@
+@import './miya-platform-variables';
+@import './bootstrap';
+@import './source-sans-pro.css';
+
+html, body {
+  /* Reset HTML element to be absolute positioned and fill entire viewport */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 0;
+  margin: 0;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex: 1;
+}
+
+#root {
+  display: flex;
+  flex: 1;
+  > * {
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+  }
+}
+
