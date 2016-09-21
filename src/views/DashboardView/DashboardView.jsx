@@ -1,22 +1,22 @@
 /**
- * Created by Chris.Dorward on 20/09/2016.
+ * Created by Chris.Dorward on 21/09/2016.
  */
 
 import React from 'react';
-import ViewContainer from '../../components/ViewContainer/ViewContainer';
+import './DashboardView.scss';
 
 export function DashboardView() {
     return (
-            <ViewContainer>
-                <h1>View Title</h1>
-                <dashboard>
-                    dashboard
-                </dashboard>
-            </ViewContainer>
 
+        <dashboard>
+            <h2>Dashboard View Title</h2>
+            <p className="aClass">Dashboard</p>
+        </dashboard>
     );
 }
+
 
 DashboardView.propTypes = {};
 
 export default DashboardView;
+

@@ -13,6 +13,7 @@ export class App extends React.Component {
         return (
             <app-container>
                 <Navbar {...this.props}/>
+                {this.props.children ? this.props.children : <Link to="/dashboard">Dashboard</Link>}
             </app-container>
 
         );

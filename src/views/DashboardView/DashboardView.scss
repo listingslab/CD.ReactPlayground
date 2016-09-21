@@ -1,5 +1,14 @@
-.DashboardView {
-  background: pink;
-  border: 1px solid green;
+/**
+ * Created by Chris.Dorward on 21/09/2016.
+ */
+
+@import 'variables.scss';
+
+dashboard{
+  > h2{
+    color: $title-color;
+  }
 }
+
+
 

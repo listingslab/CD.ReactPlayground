@@ -31,6 +31,7 @@ import { WardView } from './views/WardView/WardView';
 
 window.myDebug = debug;
 
+
 const browserHistory = useRouterHistory(createHistory)({
     basename: APP_BASE_URL
 });

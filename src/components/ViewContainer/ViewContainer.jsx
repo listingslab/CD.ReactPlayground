@@ -12,7 +12,7 @@ export class ViewContainer extends React.Component {
     };
 
     render() {
-        console.log(styles.ViewContainer);
+        console.log('ViewContainer ' + styles.ViewContainer);
         return (
             <v className={ styles.ViewContainer }>ViewContainer</v>
         );
