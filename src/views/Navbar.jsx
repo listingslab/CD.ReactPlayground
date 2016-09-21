@@ -5,31 +5,29 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-export function Navbar(props) {
-    const pathName = props.location.pathname;
-
+export function Navbar() {
     return (
         <header className="navbar navbar-inverse navbar-static-top">
             <div className="container-fluid">
                 <ul className="nav navbar-nav">
-                    <li className={pathName === '/dashboard' ? 'active' : null}>
-                        <Link className="navbar-brand active" to="/dashboard">
-                            <span className="">Dashboard</span>
+                    <li>
+                        <Link activeClassName="active" to="/dashboard">
+                            Dashboard
                         </Link>
                     </li>
-                    <li className={pathName === '/ward' ? 'active' : null}>
-                        <Link className="navbar-brand" to="/ward">
-                            <span className="">Ward View</span>
+                    <li>
+                        <Link activeClassName="active" to="/ward">
+                            Ward View
                         </Link>
                     </li>
-                    <li className={pathName === '/ed' ? 'active' : null}>
-                        <Link className="navbar-brand" to="/ed">
-                            <span className="">ED Admissions List</span>
+                    <li>
+                        <Link activeClassName="active" to="/ed">
+                            ED Admissions List
                         </Link>
                     </li>
-                    <li className={pathName === '/allocation' ? 'active' : null}>
-                        <Link className="navbar-brand" to="/allocation">
-                            <span className="">Allocation</span>
+                    <li>
+                        <Link activeClassName="active" to="/allocation">
+                           Allocation
                         </Link>
                     </li>
                 </ul>
@@ -38,6 +36,8 @@ export function Navbar(props) {
     );
 }
 
-Navbar.propTypes = {};
+Navbar.propTypes = {
+
+};
 
 export default Navbar;

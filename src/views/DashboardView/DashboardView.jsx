@@ -3,23 +3,26 @@
  */
 
 import React from 'react';
-import NewComponent from '../../components/NewComponent/NewComponent';
+import New from '../../components/NewComponent/NewComponent';
 
 import './DashboardView.scss';
 
-export function DashboardView() {
+export function DashboardView(props) {
+    const data = {
+        title: 'View Title',
+    };
     return (
-
         <dashboard>
-            <NewComponent></NewComponent>
+            <New data={data} />
             <h2>Dashboard View Title</h2>
             <p className="aClass">Dashboard</p>
         </dashboard>
     );
 }
 
+DashboardView.propTypes = {
 
-DashboardView.propTypes = {};
+};
 
 export default DashboardView;
 

@@ -64,3 +64,14 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
     }
   }
 }
+
+.navbar-nav {
+  li > a.active {
+    &,
+    &:hover,
+    &:focus {
+      color: $navbar-inverse-link-active-color;
+      background-color: $navbar-inverse-link-active-bg;
+    }
+  }
+}

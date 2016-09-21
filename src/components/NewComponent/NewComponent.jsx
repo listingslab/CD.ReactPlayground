@@ -6,19 +6,16 @@
 import React from 'react';
 import './NewComponent.scss';
 
-export class NewComponent extends React.Component {
-    static propTypes = {
-
-    };
-
-    render() {
-
-        return (
-            <newcomponent>
-                <h2>new component</h2>
-            </newcomponent>
-        );
-    }
+function NewComponent(props) {
+    return (
+        <newcomponent>
+            <h2>{props.data.title}</h2>
+        </newcomponent>
+    );
 }
+
+NewComponent.propTypes = {
+
+};
 
 export default NewComponent;

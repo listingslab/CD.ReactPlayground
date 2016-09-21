@@ -33,7 +33,7 @@ window.myDebug = debug;
 
 
 const browserHistory = useRouterHistory(createHistory)({
-    basename: APP_BASE_URL
+    basename: APP_BASE_URL,
 });
 
 const sagaMiddleware = createSagaMiddleware();
