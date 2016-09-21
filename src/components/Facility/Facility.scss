@@ -5,15 +5,20 @@
 
 facility {
   display: flex;
-  color: $table-title-text;
-  background-color: $table-title-bg;
-  border-top: 3px solid $table-title-bottom-border;
-  border-bottom: 3px solid $table-title-bottom-border;
+  flex-direction: column;
 
-  > h2 {
-    font-size: 22px;
-    margin-left: 10px;
-    margin-bottom: 20px;
+  > facility-title {
+
+      color: $table-title-text;
+      border-bottom: 3px solid $table-title-bottom-border;
+      background-color: $table-title-bg;
+      border-top: 3px solid $table-title-bottom-border;
+
+      > h2 {
+        font-size: 22px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+      }
   }
 
   margin-bottom: 25px;

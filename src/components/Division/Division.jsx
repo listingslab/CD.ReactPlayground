@@ -9,14 +9,16 @@ import './Division.scss';
 function Division(props) {
     return (
         <division>
-            <h2>{props.data.title}</h2>
+            <division-title>
+                <h3>{props.data.divisionName}</h3>
+            </division-title>
         </division>
     );
 }
 
 Division.propTypes = {
     data: React.PropTypes.shape({
-        title: React.PropTypes.string,
+        divisionName: React.PropTypes.string,
     }),
 };
 

@@ -6,20 +6,21 @@ import React from 'react';
 import Facility from '../../components/Facility/Facility';
 
 import './DashboardView.scss';
-import DashboardData from './DashboardData.js';
+
+import dashboardData from './dashboardData.js';
 
 export function DashboardView() {
-    // console.log(DashboardData);
     const facilities = [];
-
-    if (DashboardData.length > 0) {
-        for (let i = 0; i < DashboardData.length; i++) {
-            facilities.push(<Facility key={i} data={DashboardData[i]} />);
+    if (dashboardData.length > 0) {
+        for (let i = 0; i < dashboardData.length; i++) {
+            facilities.push(
+                <Facility key={i} data={dashboardData[i]} />
+            );
         }
     } else {
-        facilities.push(<div className="row-container">
+        facilities.push(
             <div>There are no facilities</div>
-        </div>);
+        );
     }
 
     return (
