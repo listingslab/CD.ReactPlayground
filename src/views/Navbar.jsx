@@ -5,29 +5,29 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-export function Navbar() {
+export function Navbar(props) {
+    const pathName = props.location.pathname;
     return (
         <header className="navbar navbar-inverse navbar-static-top">
             <div className="container-fluid">
 
-
                 <ul className="nav navbar-nav">
-                    <li>
-                        <Link className="navbar-brand" to="/dashboard">
+                    <li className={pathName === '/dashboard' ? 'active' : null}>
+                        <Link className="navbar-brand active" to="/dashboard">
                             <span className="">Dashboard</span>
                         </Link>
                     </li>
-                    <li>
+                    <li className={pathName === '/ward' ? 'active' : null}>
                         <Link className="navbar-brand" to="/ward">
                             <span className="">Ward View</span>
                         </Link>
                     </li>
-                    <li>
+                    <li className={pathName === '/ed' ? 'active' : null}>
                         <Link className="navbar-brand" to="/ed">
                             <span className="">ED Admissions List</span>
                         </Link>
                     </li>
-                    <li>
+                    <li className={pathName === '/allocation' ? 'active' : null}>
                         <Link className="navbar-brand" to="/allocation">
                             <span className="">Allocation</span>
                         </Link>
