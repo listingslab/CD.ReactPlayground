@@ -23,24 +23,19 @@ npm start```
                         common.scss
                         mixins.scss
                         mobile.scss        
-                        screen.scss         <-- This is where your primary layout lives
-                        utilities.scss      <-- Optional mobile layout
-                        variables.scss      <-- Contains all App level style variables
+                        screen.scss
+                        utilities.scss
+                        variables.scss
                         <font>.css
             fonts/
-                        EOT/
-                        OTF/
-                        TTF/
-                        WOFF/
-                        WOFF2/
             images/
             templates/
     scripts/
-            server.js                       <-- Webpack enabled server
+            server.js
             setup-jasmine-env.js
-            
     src/
             actions/
+            api/
             components/
                         ComponentName/
                                         ComponentName.jsx
@@ -49,6 +44,7 @@ npm start```
             controllers/
             reducers/
             sagas/
+            utilities/
             views/
 ```
         

@@ -70,7 +70,6 @@ const webconfig = {
             title: 'React Playground',
             favicon: 'assets/images/favicon.ico',
             chunksSortMode: 'dependency',
-            version: require("./package.json").version,
         }),
     ],
     devtool: 'cheap-module-source-map',

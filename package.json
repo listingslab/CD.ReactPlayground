@@ -12,6 +12,7 @@
     "test": "jest --no-cache --config jest.config.json",
     "cover": "jest --no-cache --config jest.config.json --coverage",
     "lint": "./node_modules/.bin/eslint .",
+    "lint-fix": "./node_modules/.bin/eslint --fix .",
     "testdbg": "node %NODE_DEBUG_OPTION% --harmony ./node_modules/jest-cli/bin/jest.js --runInBand",
     "typecheck": "flow check"
   },
@@ -32,6 +33,7 @@
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",
     "eslint-import-resolver-webpack": "^0.6.0",
+    "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-flowtype": "^2.18.2",
     "eslint-plugin-import": "^1.15.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
@@ -56,6 +58,7 @@
     "bootstrap-sass": "^3.3.7",
     "debug": "^2.2.0",
     "history": "^2.1.2",
+    "isomorphic-fetch": "^2.2.1",
     "moment": "^2.15.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",

@@ -9,6 +9,7 @@ module.exports = {
     },
     plugins: [
         'flowtype',
+        'babel',
     ],
     settings: {
         'import/resolver': {
@@ -26,6 +27,9 @@ module.exports = {
 
         // Warn for very long lines - unless the line is a URL
         'max-len': ['warn', 120, { 'ignoreUrls': true }],
+
+        'generator-star-spacing': 0,
+        'babel/generator-star-spacing': ["error", { before: false, after:true }],
 
         "react/require-extension": 0,
 

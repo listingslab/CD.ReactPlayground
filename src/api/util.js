@@ -41,7 +41,7 @@ export async function urlBuilder(url, parameters = {}) {
  */
 export function getJson(url) {
     return window.fetch(url)
-        .then(response => {
+        .then((response) => {
             if (response.ok) {
                 return response.json();
             }
@@ -55,7 +55,7 @@ export function getJson(url) {
  */
 export function getText(url) {
     return window.fetch(url)
-        .then(response => {
+        .then((response) => {
             if (response.ok) {
                 return response.text();
             }
