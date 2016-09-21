@@ -19,7 +19,7 @@ function Facility(props) {
         }
     } else {
         divisions.push(
-            <div>There are no divisions for this facility</div>
+            <div key="0">There are no divisions for this facility</div>
         );
     }
 
