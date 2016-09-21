@@ -20,7 +20,7 @@ export async function urlBuilder(url, parameters = {}) {
         const part = parts[i];
         if (part.startsWith('{') && part.endsWith('}')) {
             const key = part.substr(1, part.length - 2);
-
+            // eslint-disable-next-line no-prototype-builtins
             if (parameters.hasOwnProperty(key)) {
                 parts[i] = parameters[key];
             } else {

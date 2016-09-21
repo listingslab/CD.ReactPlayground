@@ -85,5 +85,5 @@ class ConfigLoader {
         return (index && index === length) ? configObject : undefined;
     }
 }
-
+// eslint-disable-next-line no-undef
 export default Config = new ConfigLoader();
