@@ -7,10 +7,10 @@ import { Link } from 'react-router';
 
 export function Navbar(props) {
     const pathName = props.location.pathname;
+
     return (
         <header className="navbar navbar-inverse navbar-static-top">
             <div className="container-fluid">
-
                 <ul className="nav navbar-nav">
                     <li className={pathName === '/dashboard' ? 'active' : null}>
                         <Link className="navbar-brand active" to="/dashboard">

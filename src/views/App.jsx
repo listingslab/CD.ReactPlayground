@@ -7,12 +7,9 @@ import { connect } from 'react-redux';
 import { Navbar } from './Navbar';
 
 export class App extends React.Component {
-    static propTypes = {
-    };
+    static propTypes = {};
 
     render() {
-        console.log(this.props.location.pathname);
-
         return (
             <app-container>
                 <Navbar {...this.props}/>
