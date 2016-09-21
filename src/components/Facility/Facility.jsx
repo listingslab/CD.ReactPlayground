@@ -6,17 +6,17 @@
 import React from 'react';
 import './Facility.scss';
 
-function Facility() {
+function Facility(props) {
     return (
         <facility>
-            <h2>a facility</h2>
+            <h2>{props.data.facilityName}</h2>
         </facility>
     );
 }
 
 Facility.propTypes = {
     data: React.PropTypes.shape({
-        title: React.PropTypes.string,
+        facilityName: React.PropTypes.string,
     }),
 };
 
