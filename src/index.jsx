@@ -21,10 +21,12 @@ import rootSaga from './sagas/index';
 
 
 import { App } from './views/App';
-import { DashboardView } from './views/DashboardView';
-import { WardView } from './views/WardView';
-import { EDAdmissionView } from './views/EDAdmissionView';
-import { AllocationView } from './views/AllocationView';
+
+// Views
+import { AllocationView } from './views/AllocationView/AllocationView';
+import { DashboardView } from './views/DashboardView/DashboardView';
+import { EDView } from './views/EDView/EDView';
+import { WardView } from './views/WardView/WardView';
 
 
 window.myDebug = debug;
@@ -55,10 +57,11 @@ ReactDOM.render(
                 <IndexRedirect to="dashboard" />
                 <Route path="dashboard" component={DashboardView} />
                 <Route path="ward" component={WardView} />
-                <Route path="ed" component={EDAdmissionView} />
+                <Route path="ed" component={EDView} />
                 <Route path="allocation" component={AllocationView} />
             </Route>
         </Router>
     </Provider>
     , document.getElementById('root')
 );
+
