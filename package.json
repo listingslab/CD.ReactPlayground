@@ -11,7 +11,7 @@
     "clean": "rimraf dist coverage",
     "test": "jest --no-cache --config jest.config.json",
     "cover": "jest --no-cache --config jest.config.json --coverage",
-    "lint": "./node_modules/.bin/eslint .",
+    "lint": "./node_modules/.bin/eslint --ext js,jsx .",
     "lint-fix": "./node_modules/.bin/eslint --fix .",
     "testdbg": "node %NODE_DEBUG_OPTION% --harmony ./node_modules/jest-cli/bin/jest.js --runInBand",
     "typecheck": "flow check"
