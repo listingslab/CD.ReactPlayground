@@ -12,9 +12,9 @@ export class App extends React.Component {
 
     render() {
         return (
-            <app>
+            <app-container>
                 <Navbar />
-            </app>
+            </app-container>
 
         );
     }
