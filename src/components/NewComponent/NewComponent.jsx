@@ -15,7 +15,9 @@ function NewComponent(props) {
 }
 
 NewComponent.propTypes = {
-
+    data: React.PropTypes.shape({
+        title: React.PropTypes.string,
+    }),
 };
 
 export default NewComponent;

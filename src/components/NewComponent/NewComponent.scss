@@ -4,8 +4,9 @@
 @import '../../../assets/css/variables.scss';
 
 newcomponent {
-  border: 5px solid $bright-red;
+  display: block;
 
+  border: 5px solid $bright-red;
   > h2 {
     color: $bright-green;
   }

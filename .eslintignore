@@ -3,3 +3,4 @@ public/
 **/fixtures/*
 flow_typed/
 
+src/views/DashboardView/DashboardData.js

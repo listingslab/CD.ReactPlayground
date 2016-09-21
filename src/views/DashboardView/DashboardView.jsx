@@ -6,22 +6,22 @@ import React from 'react';
 import New from '../../components/NewComponent/NewComponent';
 
 import './DashboardView.scss';
+import DashboardData from './DashboardData.js';
 
-export function DashboardView(props) {
+export function DashboardView() {
+
+    // console.log(DashboardData);
     const data = {
         title: 'View Title',
     };
     return (
         <dashboard>
             <New data={data} />
-            <h2>Dashboard View Title</h2>
-            <p className="aClass">Dashboard</p>
         </dashboard>
     );
 }
 
 DashboardView.propTypes = {
-
 };
 
 export default DashboardView;
