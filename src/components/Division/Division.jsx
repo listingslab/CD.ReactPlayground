@@ -5,12 +5,14 @@
 
 import React from 'react';
 import './Division.scss';
+import DivisionTable from '../DivisionTable/DivisionTable';
 
 function Division(props) {
     return (
         <division>
             <division-title>
                 <h3>{props.data.divisionName}</h3>
+                <DivisionTable data={props.data.wards} />
             </division-title>
         </division>
     );
@@ -19,6 +21,7 @@ function Division(props) {
 Division.propTypes = {
     data: React.PropTypes.shape({
         divisionName: React.PropTypes.string,
+        wards: React.PropTypes.array,
     }),
 };
 

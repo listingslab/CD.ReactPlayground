@@ -5,7 +5,6 @@
 
 import React from 'react';
 import './Facility.scss';
-
 import Division from '../Division/Division';
 
 function Facility(props) {

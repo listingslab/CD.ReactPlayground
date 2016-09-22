@@ -3,4 +3,39 @@
  */
 @import '../../../assets/css/variables.scss';
 
+division-table {
+  display: flex;
+  flex-direction: column;
+
+  margin-left:10px;
+  margin-right:10px;
+  font-weight: bold;
+
+
+
+  th, td {
+    text-align: center;
+    width: 7.14%
+  }
+
+  th {
+    background-color: $table-th-bg;
+  }
+
+  .table-striped > tbody > tr:nth-child(odd) > td {
+    background-color: $table-stripe-light;
+  }
+  .table-striped > tbody > tr:nth-child(odd) > td.availability {
+    background-color: $availability-green;
+  }
+
+  .table-striped > tbody > tr:nth-child(even) > td {
+    background-color: $table-stripe-dark;
+  }
+  .table-striped > tbody > tr:nth-child(even) > td.availability {
+    background-color: $availability-green;
+  }
+
+}
+
 
