@@ -4,16 +4,23 @@
  */
 
 import React from 'react';
+import Collapsible from 'react-collapsible';
 import './Division.scss';
 import DivisionTable from '../DivisionTable/DivisionTable';
 
-function Division(props) {
+function Division(props: any = {}) {
+    const openState = true;
     return (
         <division>
-            <division-title>
-                <h3>{props.data.divisionName}</h3>
+            <Collapsible
+                trigger={props.data.divisionName}
+                open={openState}
+                transitionTime={300}
+                classParentString="division"
+                easing={'ease-in'}
+            >
                 <DivisionTable data={props.data.wards} />
-            </division-title>
+            </Collapsible>
         </division>
     );
 }

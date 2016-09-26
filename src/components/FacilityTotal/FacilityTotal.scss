@@ -1,0 +1,36 @@
+/**
+ * Created by Chris.Dorward on 22/09/2016.
+ */
+@import '../../../assets/css/variables.scss';
+
+facility-totals-table {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-weight: bold;
+
+  .table-bordered > tbody > tr > td {
+    vertical-align: middle;
+    border: 1px solid $table-facility-total-cell-border;
+  }
+
+  .table-bordered > tbody > tr:nth-child(odd) > td.availability {
+    background-color: $availability-dark-green;
+  }
+
+  tr {
+    border-top: 2px solid $table-facility-total-border;
+    border-bottom: 2px solid $table-facility-total-border;
+  }
+
+  td {
+    background-color: $table-facility-total-bg;
+    text-align: center;
+    width: 7.14%;
+    height: 40px;
+  }
+
+}
+
+

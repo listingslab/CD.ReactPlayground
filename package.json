@@ -1,23 +1,22 @@
 {
-  "name": "react-playground",
+  "name": "alcidion-miya-web-access",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "http://ac-tfs:8080/tfs/Product/Research/_git/CD.ReactPlayground"
+    "url": "http://ac-tfs.alcidion.local:8080/tfs/Product/Miya/_git/Web.MiyaAccess"
   },
   "author": "Alcidion",
   "scripts": {
-    "start": "set NODE_ENV=development&&set DEBUG=MiyaSmartformsDesigner:*&&babel-node scripts/server.js",
-    "clean": "rimraf dist coverage",
+    "start": "set NODE_ENV=development&&set DEBUG=MiyaWebAccess:*&&babel-node scripts/server.js",
     "test": "jest --no-cache --config jest.config.json",
     "cover": "jest --no-cache --config jest.config.json --coverage",
     "lint": "./node_modules/.bin/eslint --ext js,jsx .",
-    "lint-fix": "./node_modules/.bin/eslint --fix .",
     "testdbg": "node %NODE_DEBUG_OPTION% --harmony ./node_modules/jest-cli/bin/jest.js --runInBand",
-    "typecheck": "flow check"
+    "typecheck": "flow check",
+    "tlt": "npm run typecheck && npm run lint && npm run test"
   },
   "license": "UNLICENCED",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "devDependencies": {
     "autoprefixer": "^6.4.1",
     "babel-cli": "^6.14.0",
@@ -61,6 +60,7 @@
     "isomorphic-fetch": "^2.2.1",
     "moment": "^2.15.0",
     "react": "^15.3.2",
+    "react-collapsible": "^1.1.0",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
     "react-router": "^2.8.1",

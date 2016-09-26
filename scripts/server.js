@@ -9,7 +9,7 @@ const proxy = require('../devproxy.config');
 
 const listen = process.argv[2];
 let APP_HOST = '0.0.0.0';
-let APP_PORT = 20002;
+let APP_PORT = 12345;
 if (listen && listen !== '') {
     if (listen.indexOf(':')) {
         [APP_HOST, APP_PORT] = listen.split(':');

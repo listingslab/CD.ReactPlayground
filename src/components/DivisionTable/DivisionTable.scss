@@ -6,12 +6,21 @@
 division-table {
   display: flex;
   flex-direction: column;
+  margin-left:15px;
+  margin-right:15px;
 
-  margin-left:10px;
-  margin-right:10px;
-  font-weight: bold;
+  .table-hover>tbody>tr>td:hover, .table-hover>tbody>tr>td:hover{
+    cursor: pointer;
+    background-color: $table-title-bg!important;
+  }
 
+  .table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th{
+    background-color: inherit;
+  }
 
+  .table {
+    margin-bottom:0px;
+  }
 
   th, td {
     text-align: center;
@@ -22,8 +31,13 @@ division-table {
     background-color: $table-th-bg;
   }
 
+  .table-striped > thead > tr > th {
+    vertical-align: middle;
+  }
+
   .table-striped > tbody > tr:nth-child(odd) > td {
     background-color: $table-stripe-light;
+    vertical-align: middle;
   }
   .table-striped > tbody > tr:nth-child(odd) > td.availability {
     background-color: $availability-green;
@@ -31,9 +45,21 @@ division-table {
 
   .table-striped > tbody > tr:nth-child(even) > td {
     background-color: $table-stripe-dark;
+    vertical-align: middle;
   }
   .table-striped > tbody > tr:nth-child(even) > td.availability {
     background-color: $availability-green;
+  }
+
+  .table-striped > tbody > tr.totals > td {
+    background-color: $table-division-total;
+    font-weight: bold;
+  }
+
+  .table-striped > tbody > tr.totals {
+    border-top: 2px solid $table-division-total-border;
+    height: 40px;
+    vertical-align: middle;
   }
 
 }

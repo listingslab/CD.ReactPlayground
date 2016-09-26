@@ -6,7 +6,7 @@
 import React from 'react';
 import './NewComponent.scss';
 
-function NewComponent(props) {
+function NewComponent(props: any = {}) {
     return (
         <newcomponent>
             <h2>{props.data.title}</h2>

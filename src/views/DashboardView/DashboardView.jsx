@@ -19,7 +19,7 @@ export function DashboardView() {
         }
     } else {
         facilities.push(
-            <div>There are no facilities</div>
+            <div key="0">No facilities found</div>
         );
     }
 
@@ -34,4 +34,3 @@ DashboardView.propTypes = {
 };
 
 export default DashboardView;
-

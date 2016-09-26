@@ -6,9 +6,25 @@
 import React from 'react';
 import './DivisionTable.scss';
 
-function DivisionTable(props) {
+function DivisionTable(props: any = {}) {
     const wardsData = props.data;
     const wards = [];
+    const totals = {
+        available: 0,
+        borders: 0,
+        open: 0,
+        occupied: 0,
+        vacant: 0,
+        closed: 0,
+        EDAdmit: 0,
+        TransferIn: 0,
+        ConDCToday: 0,
+        PotDCToday: 0,
+        ConfDCTomorrow: 0,
+        PotDCTomorrow: 0,
+        TransfersOut: 0,
+    };
+
     if (wardsData.length > 0) {
         for (let i = 0; i < wardsData.length; i++) {
             const d = wardsData[i].counts;
@@ -16,12 +32,24 @@ function DivisionTable(props) {
             if (d.available > 0) {
                 availabilityClass = 'availability';
             }
-
+            totals.available += d.available;
+            totals.borders += d.borders;
+            totals.open += d.open;
+            totals.occupied += d.occupied;
+            totals.vacant += d.vacant;
+            totals.closed += d.closed;
+            totals.EDAdmit += d.EDAdmit;
+            totals.TransferIn += d.TransferIn;
+            totals.ConDCToday += d.ConDCToday;
+            totals.PotDCToday += d.PotDCToday;
+            totals.ConfDCTomorrow += d.ConfDCTomorrow;
+            totals.PotDCTomorrow += d.PotDCTomorrow;
+            totals.TransfersOut += d.TransfersOut;
             wards.push(
                 <tr key={i}>
                     <td>{wardsData[i].wardName}</td>
                     <td className={availabilityClass}>
-                        {d.available ? d.available : null}
+                        {d.available != null ? d.available : null}
                     </td>
                     <td>{d.borders ? d.borders : null}</td>
                     <td>{d.open ? d.open : null}</td>
@@ -40,13 +68,36 @@ function DivisionTable(props) {
         }
     } else {
         wards.push(
-            <div key="0">There are no wards for this division</div>
+            <tr key="0">
+                <td colSpan="14">There are no wards for this division</td>
+            </tr>
         );
     }
-
+    let totalAvailabilityClass = null;
+    if (totals.available > 0) {
+        totalAvailabilityClass = 'availability';
+    }
+    wards.push(
+        <tr key="totals" className="totals">
+            <td>Division Total</td>
+            <td className={totalAvailabilityClass}>{totals.available}</td>
+            <td>{totals.borders}</td>
+            <td>{totals.open}</td>
+            <td>{totals.occupied}</td>
+            <td>{totals.vacant}</td>
+            <td>{totals.closed}</td>
+            <td>{totals.EDAdmit}</td>
+            <td>{totals.TransferIn}</td>
+            <td>{totals.ConDCToday}</td>
+            <td>{totals.PotDCToday}</td>
+            <td>{totals.ConfDCTomorrow}</td>
+            <td>{totals.PotDCTomorrow}</td>
+            <td>{totals.TransfersOut}</td>
+        </tr>
+    );
     return (
         <division-table>
-            <table className="table table-striped table-bordered table-responsive">
+            <table className="table table-hover table-striped table-bordered table-condensed">
                 <thead>
                     <tr>
                         <th>Ward</th>

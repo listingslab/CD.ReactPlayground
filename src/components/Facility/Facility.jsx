@@ -4,10 +4,13 @@
  */
 
 import React from 'react';
-import './Facility.scss';
+import Collapsible from 'react-collapsible';
 import Division from '../Division/Division';
 
-function Facility(props) {
+import './Facility.scss';
+import FacilityTotal from '../FacilityTotal/FacilityTotal';
+
+function Facility(props: any = {}) {
     const divisionsData = props.data.divisions;
     const divisions = [];
     if (divisionsData.length > 0) {
@@ -21,13 +24,19 @@ function Facility(props) {
             <div key="0">There are no divisions for this facility</div>
         );
     }
-
+    const openState = true;
     return (
         <facility>
-            <facility-title>
-                <h2>{props.data.facilityName}</h2>
-            </facility-title>
-            {divisions}
+            <Collapsible
+                trigger={props.data.facilityName}
+                open={openState}
+                transitionTime={300}
+                classParentString="facility"
+                easing={'ease-in'}
+            >
+                {divisions}
+                <FacilityTotal data={props.data} />
+            </Collapsible>
         </facility>
     );
 }

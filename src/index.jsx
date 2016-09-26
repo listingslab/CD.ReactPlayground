@@ -19,13 +19,10 @@ import 'assets/css/screen.scss';
 import * as reducers from './reducers/index';
 import rootSaga from './sagas/index';
 
-
 import { App } from './views/App';
 
 // Views
-import { AllocationView } from './views/AllocationView/AllocationView';
 import { DashboardView } from './views/DashboardView/DashboardView';
-import { EDView } from './views/EDView/EDView';
 import { WardView } from './views/WardView/WardView';
 
 
@@ -58,11 +55,8 @@ ReactDOM.render(
                 <IndexRedirect to="dashboard" />
                 <Route path="dashboard" component={DashboardView} />
                 <Route path="ward" component={WardView} />
-                <Route path="ed" component={EDView} />
-                <Route path="allocation" component={AllocationView} />
             </Route>
         </Router>
     </Provider>
     , document.getElementById('root')
 );
-

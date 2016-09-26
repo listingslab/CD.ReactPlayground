@@ -67,7 +67,7 @@ const webconfig = {
         new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /en-au/),
         new HtmlWebpackPlugin({
             template: 'assets/templates/index.ejs',
-            title: 'React Playground',
+            title: 'Miya Web Access',
             favicon: 'assets/images/favicon.ico',
             chunksSortMode: 'dependency',
         }),

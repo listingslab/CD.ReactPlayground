@@ -2,10 +2,8 @@
  * Created by Chris.Dorward on 21/09/2016.
  */
 
-@import 'variables.scss';
+@import '../../../assets/css/variables.scss';
 
 dashboard{
+  border-bottom: 3px solid $table-title-bottom-border;
 }
-
-
-

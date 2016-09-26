@@ -4,11 +4,19 @@
 
 import React from 'react';
 import { Link } from 'react-router';
+import logo from 'assets/images/miya-logo.png';
 
 export function Navbar() {
     return (
         <header className="navbar navbar-inverse navbar-static-top">
             <div className="container-fluid">
+
+                <div className="navbar-header">
+                    <Link className="navbar-brand" to="/">
+                        <img alt="Miya" src={logo} />
+                    </Link>
+                </div>
+
                 <ul className="nav navbar-nav">
                     <li>
                         <Link activeClassName="active" to="/dashboard">
@@ -18,16 +26,6 @@ export function Navbar() {
                     <li>
                         <Link activeClassName="active" to="/ward">
                             Ward View
-                        </Link>
-                    </li>
-                    <li>
-                        <Link activeClassName="active" to="/ed">
-                            ED Admissions List
-                        </Link>
-                    </li>
-                    <li>
-                        <Link activeClassName="active" to="/allocation">
-                           Allocation
                         </Link>
                     </li>
                 </ul>

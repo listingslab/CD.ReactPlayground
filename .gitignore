@@ -1,6 +1,12 @@
+# IDE Config
 .idea
 
 # Build Output
+public/
+
+# Test anc Coverate ouput
+reports/
+coverage/
 
 # Dependency directories
 node_modules

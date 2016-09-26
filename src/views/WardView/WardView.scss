@@ -1,17 +1,24 @@
 /**
- * Created by Chris.Dorward on 21/09/2016.
+ * Created by Chris.Dorward on 23/09/2016.
  */
 @import '../../../assets/css/variables.scss';
 
-facility {
-  display: flex;
-  flex-direction: column;
+ward {
+
+  nested {
+    display: flex;
+    flex-direction: column;
+    padding:15px;
+    margin-top:15px;
+    font-size: 14px;
+  }
 
   .facility__contentInner {
     border-top: 0;
     border-top: 3px solid $table-title-bottom-border;
   }
   .facility__contentInner p {
+
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 20px;
@@ -19,10 +26,11 @@ facility {
   .facility__contentInner p:last-child {
     margin-bottom: 0;
   }
+
   .facility__trigger {
     display: block;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 300;
     position: relative;
     border-top: 3px solid $table-title-bottom-border;
     padding: 15px;
@@ -31,12 +39,11 @@ facility {
     font-size: 22px;
   }
   .facility__trigger:after {
-    font-family: 'Glyphicons Halflings';
-    cursor: pointer;
-    content: '\e260';
+    font-family: 'FontAwesome';
+    content: '\f107';
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 10px;
+    top: 10px;
     display: block;
     transition: transform 300ms;
   }
@@ -44,4 +51,9 @@ facility {
     transform: rotateZ(180deg);
   }
 
+
+  border-bottom: 3px solid $table-title-bottom-border;
 }
+
+
+
